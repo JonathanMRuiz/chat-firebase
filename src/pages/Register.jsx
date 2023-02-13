@@ -1,5 +1,5 @@
 import React from "react";
-
+import AddAvatar from "../assets/addAvatar.png";
 const Register = () => {
   return (
     <div className="formContainer">
@@ -17,7 +17,10 @@ const Register = () => {
             id="file"
             placeholder="Avatar"
           />
-          <label htmlFor="file">File</label>
+          <label htmlFor="file">
+            <img src={AddAvatar} alt="avatar" />
+            <span>Add an Avatar</span>
+          </label>
           <button>Sign up</button>
         </form>
         <p>You do have an account? Login</p>
